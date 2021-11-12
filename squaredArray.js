@@ -27,3 +27,5 @@ function sortedSquared(array) {
   return result;
 }
 console.log(sortedSquared([-7,-3,2,3,11]));
+
+//Time Complexity of O(N)
