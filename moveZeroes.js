@@ -9,7 +9,7 @@
 // A two-pointer approach could be helpful here. The idea would be to have one pointer for iterating the array and another pointer that just works on the non-zero elements of the array.
 
 function moveZeroes(nums) {
-    let idx = 0;
+    let idx = 0; //counter for non zero items, will be replacing the counter as the index and the elem
     for (let i = 0; i < nums.length; i++) {
       if (nums[i] !== 0) {//
         nums[idx] = nums[i]; //
