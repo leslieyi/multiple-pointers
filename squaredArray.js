@@ -19,9 +19,15 @@ function sortedSquared(array) {
   while (start <= end) {
     if (array[start] ** 2 > array[end] ** 2) {
       result[position--] = array[start++] ** 2; //put it at the end if the start is bigger
+      // result[position] = array[start] ** 2 
+      // start++
     } else {
       result[position--] = array[end--] ** 2; //the end, remains at the end 
+      // result[position] = array[end] ** 2  
+      // end--
     }
+    // position--
+
   }
 
   return result;
